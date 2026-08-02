@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Noor Computer Shop</title>
+  <meta name="description" content="Have a question or need a quote? We're here to help — reach out any time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span class="logo-badge">N</span><span>Noor <span class="text-gradient">Computer</span></span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" title="Wishlist">♥</button>
+        <button class="icon-btn" title="Cart">🛒</button>
+        <button class="nav-toggle" id="navToggle" title="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><div class="mm-inner">
+      <a href="index.html">Home</a><a href="products.html">Products</a>
+      <a href="services.html">Services</a><a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div></div>
+  </header>
+
+  <section class="page-header">
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Contact Us</h1>
+    <p>Have a question or need a quote? We're here to help — reach out any time.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <span class="eyebrow">Reach Us</span>
+          <h2 style="font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;margin:.5rem 0 2rem">Let's Talk</h2>
+          <div class="info-list">
+            <div class="info-card reveal"><div class="info-ico">📍</div><div><div class="lbl">Address</div><div class="val">123 Tech Avenue, Silicon City, SC 90210</div></div></div>
+            <div class="info-card reveal"><div class="info-ico">📞</div><div><div class="lbl">Phone</div><div class="val">(123) 456-7890</div></div></div>
+            <div class="info-card reveal"><div class="info-ico">✉️</div><div><div class="lbl">Email</div><div class="val">info@noorcomputer.com</div></div></div>
+            <div class="info-card reveal"><div class="info-ico">🕒</div><div><div class="lbl">Hours</div><div class="val">Mon–Sat: 9AM – 8PM · Sun: Closed</div></div></div>
+          </div>
+          <div class="map">
+            <iframe title="Noor Computer Shop Location" src="https://www.google.com/maps?q=Silicon+Valley&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="form-card reveal">
+          <div class="form-head"><span class="ico">💬</span><h2>Send a Message</h2></div>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="field"><label>Name</label><input required name="name" placeholder="Your name" /></div>
+              <div class="field"><label>Email</label><input required type="email" name="email" placeholder="you@email.com" /></div>
+            </div>
+            <div class="field"><label>Subject</label><input required name="subject" placeholder="How can we help?" /></div>
+            <div class="field"><label>Message</label><textarea required name="message" rows="5" placeholder="Tell us more..."></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Send Message ➤</button>
+            <p class="form-success" id="formOk" style="display:none">✓ Thanks! Your message has been sent.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="foot-cols">
+        <div class="foot-brand"><a href="index.html" class="logo"><span class="logo-badge">N</span><span>Noor <span class="text-gradient">Computer</span></span></a><p>Your trusted destination for computers, parts, and expert repair services. Quality tech, honest advice.</p><div class="foot-contact"><a href="tel:+11234567890">📞 (123) 456-7890</a><a href="mailto:info@noorcomputer.com">✉️ info@noorcomputer.com</a><span>📍 123 Tech Avenue, Silicon City</span></div></div>
+        <div class="foot-col"><h4>Shop</h4><ul><li><a href="products.html?category=laptops">Laptops</a></li><li><a href="products.html?category=gaming">Gaming PCs</a></li><li><a href="products.html?category=parts">Computer Parts</a></li><li><a href="products.html?category=monitors">Monitors</a></li></ul></div>
+        <div class="foot-col"><h4>Services</h4><ul><li><a href="services.html">Computer Repair</a></li><li><a href="services.html">Data Recovery</a></li><li><a href="services.html">Custom PC Builds</a></li><li><a href="services.html">IT Support</a></li></ul></div>
+        <div class="foot-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="services.html">Services</a></li><li><a href="index.html">Home</a></li></ul></div>
+      </div>
+      <div class="foot-bottom"><p>© 2026 Noor Computer Shop. All rights reserved.</p><div class="foot-social"><a href="#">f</a><a href="#">📷</a><a href="#">𝕏</a><a href="#">▶</a></div></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
