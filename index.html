@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noor Computer Shop — Premium Laptops, Gaming PCs & Repair</title>
+  <meta name="description" content="Discover top-tier laptops, gaming rigs, and computer parts — plus expert repair and custom build services. All in one place." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">N</span>
+        <span>Noor <span class="text-gradient">Computer</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" title="Wishlist">♥</button>
+        <button class="icon-btn" title="Cart">🛒</button>
+        <button class="nav-toggle" id="navToggle" title="Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><div class="mm-inner">
+      <a href="index.html" class="active">Home</a><a href="products.html">Products</a>
+      <a href="services.html">Services</a><a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div></div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://media.base44.com/images/public/6a6f8d1ac8c27fcaf874c91b/4ea1ef526_generated_4413d61e.png" alt="Modern gaming laptops and computers" />
+    </div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-pill">✦ Premium Tech, Trusted Service</span>
+        <h1>Power Up Your <span class="text-gradient">Digital World</span></h1>
+        <p>Discover top-tier laptops, gaming rigs, and computer parts — plus expert repair and custom build services. All in one place.</p>
+        <div class="hero-cta">
+          <a href="products.html" class="btn btn-primary">Shop Now →</a>
+          <a href="services.html" class="btn btn-ghost">Our Services</a>
+        </div>
+        <div class="hero-feats">
+          <div>🚚 Free Shipping over $99</div>
+          <div>🛡️ 2-Year Warranty</div>
+          <div>✦ Expert Setup</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Browse by Category</span>
+        <h2>Featured Categories</h2>
+        <p>Everything you need, organized for you.</p>
+      </div>
+      <div class="cat-grid">
+        <a href="products.html?category=laptops" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(37,99,235,0.2), rgba(6,182,212,0.1))"></div><div class="ico">💻</div><p class="name">Laptops</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=desktops" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(79,70,229,0.2), rgba(59,130,246,0.1))"></div><div class="ico">🖥️</div><p class="name">Desktop PCs</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=gaming" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(217,70,239,0.2), rgba(168,85,247,0.1))"></div><div class="ico">🎮</div><p class="name">Gaming PCs</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=parts" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(8,145,178,0.2), rgba(20,184,166,0.1))"></div><div class="ico">🔧</div><p class="name">Computer Parts</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=monitors" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(14,165,233,0.2), rgba(59,130,246,0.1))"></div><div class="ico">🖥️</div><p class="name">Monitors</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=keyboards" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(139,92,246,0.2), rgba(99,102,241,0.1))"></div><div class="ico">⌨️</div><p class="name">Keyboards</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=mouse" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(225,29,72,0.2), rgba(236,72,153,0.1))"></div><div class="ico">🖱️</div><p class="name">Mouse</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=printers" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(16,185,129,0.2), rgba(34,197,94,0.1))"></div><div class="ico">🖨️</div><p class="name">Printers</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=networking" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(245,158,11,0.2), rgba(249,115,22,0.1))"></div><div class="ico">📡</div><p class="name">Networking</p><span class="shop">Shop →</span></a>
+        <a href="products.html?category=accessories" class="cat-card reveal"><div class="grad" style="background:linear-gradient(135deg, rgba(37,99,235,0.2), rgba(99,102,241,0.1))"></div><div class="ico">🎧</div><p class="name">Accessories</p><span class="shop">Shop →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;max-width:none;text-align:left">
+        <div><span class="eyebrow">Handpicked For You</span><h2 style="margin-top:.5rem">Featured Products</h2></div>
+        <a href="products.html" class="btn btn-ghost" style="padding:.5rem 1rem;font-size:.875rem">View All →</a>
+      </div>
+      <div class="grid home-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why Noor</span>
+        <h2>Why Choose Noor Computer Shop</h2>
+        <p>We go beyond just selling tech — we support it.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat-card reveal"><div class="feat-ico">💲</div><div><h3>Best Prices</h3><p>Competitive pricing and regular deals on top brands.</p></div></div>
+        <div class="feat-card reveal"><div class="feat-ico">🔧</div><div><h3>Expert Repairs</h3><p>Certified technicians for fast, reliable repairs.</p></div></div>
+        <div class="feat-card reveal"><div class="feat-ico">🚚</div><div><h3>Fast Delivery</h3><p>Same-day local delivery on in-stock items.</p></div></div>
+        <div class="feat-card reveal"><div class="feat-ico">🛡️</div><div><h3>Genuine Warranty</h3><p>Authentic products backed by manufacturer warranty.</p></div></div>
+        <div class="feat-card reveal"><div class="feat-ico">🎧</div><div><h3>Friendly Support</h3><p>Real people, real advice — before and after you buy.</p></div></div>
+        <div class="feat-card reveal"><div class="feat-ico">🏆</div><div><h3>Trusted Since 2015</h3><p>Thousands of happy customers and counting.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Our Customers Say</h2>
+      </div>
+      <div class="rev-grid">
+        <div class="rev-card reveal"><div class="rev-stars">★★★★★</div><p class="rev-text">Noor Computer Shop built my custom gaming PC perfectly. The cabling was immaculate and it runs every game on ultra. Fast delivery too!</p><div class="rev-user"><div class="rev-avatar">AR</div><div><div class="nm">Ahmed Rahman</div><div class="rl">Software Engineer</div></div></div></div>
+        <div class="rev-card reveal"><div class="rev-stars">★★★★★</div><p class="rev-text">I bought my MacBook Pro here at a great price. The staff actually understood color-accurate displays and helped me pick the right monitor.</p><div class="rev-user"><div class="rev-avatar">SK</div><div><div class="nm">Sarah Khan</div><div class="rl">Graphic Designer</div></div></div></div>
+        <div class="rev-card reveal"><div class="rev-stars">★★★★★</div><p class="rev-text">They set up the entire network for my office and provide ongoing IT support. Reliable, professional, and reasonably priced.</p><div class="rev-user"><div class="rev-avatar">MA</div><div><div class="nm">Mohammed Ali</div><div class="rl">Small Business Owner</div></div></div></div>
+        <div class="rev-card reveal"><div class="rev-stars">★★★★☆</div><p class="rev-text">Got a student discount on my laptop and they installed Windows and all my software for free. Highly recommend for students!</p><div class="rev-user"><div class="rev-avatar">FN</div><div><div class="nm">Fatima Noor</div><div class="rl">Student</div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands marquee -->
+  <section><div class="container"><div class="marquee-wrap">
+    <div class="marquee">
+      <span>Apple</span><span>Dell</span><span>HP</span><span>Lenovo</span><span>ASUS</span><span>Acer</span><span>MSI</span><span>Samsung</span><span>Logitech</span><span>Intel</span><span>AMD</span><span>NVIDIA</span>
+      <span>Apple</span><span>Dell</span><span>HP</span><span>Lenovo</span><span>ASUS</span><span>Acer</span><span>MSI</span><span>Samsung</span><span>Logitech</span><span>Intel</span><span>AMD</span><span>NVIDIA</span>
+    </div>
+  </div></div></section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:3rem">
+    <div class="container">
+      <div class="cta">
+        <div class="cta-glow"></div>
+        <div class="rel">
+          <h2>Need a Custom Build or Repair?</h2>
+          <p>Our certified team is ready to help you build, upgrade, or fix your tech.</p>
+          <div class="cta-btns">
+            <a href="services.html" class="btn btn-primary">Our Services →</a>
+            <a href="contact.html" class="btn btn-ghost">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="footer-inner">
+      <div class="newsletter">
+        <div><h3>Stay in the loop</h3><p>Get exclusive deals and new arrivals delivered to your inbox.</p></div>
+        <form class="news-form"><input type="email" required placeholder="Enter your email" /><button class="btn btn-primary" style="padding:.75rem 1.25rem">Subscribe ➤</button></form>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-brand">
+          <a href="index.html" class="logo"><span class="logo-badge">N</span><span>Noor <span class="text-gradient">Computer</span></span></a>
+          <p>Your trusted destination for computers, parts, and expert repair services. Quality tech, honest advice.</p>
+          <div class="foot-contact">
+            <a href="tel:+11234567890">📞 (123) 456-7890</a>
+            <a href="mailto:info@noorcomputer.com">✉️ info@noorcomputer.com</a>
+            <span>📍 123 Tech Avenue, Silicon City</span>
+          </div>
+        </div>
+        <div class="foot-col"><h4>Shop</h4><ul>
+          <li><a href="products.html?category=laptops">Laptops</a></li>
+          <li><a href="products.html?category=gaming">Gaming PCs</a></li>
+          <li><a href="products.html?category=parts">Computer Parts</a></li>
+          <li><a href="products.html?category=monitors">Monitors</a></li>
+        </ul></div>
+        <div class="foot-col"><h4>Services</h4><ul>
+          <li><a href="services.html">Computer Repair</a></li>
+          <li><a href="services.html">Data Recovery</a></li>
+          <li><a href="services.html">Custom PC Builds</a></li>
+          <li><a href="services.html">IT Support</a></li>
+        </ul></div>
+        <div class="foot-col"><h4>Company</h4><ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul></div>
+      </div>
+      <div class="foot-brands">
+        <p>Brands We Sell</p>
+        <div class="row"><span>Apple</span><span>Dell</span><span>HP</span><span>Lenovo</span><span>ASUS</span><span>Acer</span><span>MSI</span><span>Samsung</span><span>Logitech</span><span>Intel</span><span>AMD</span><span>NVIDIA</span></div>
+      </div>
+      <div class="foot-bottom">
+        <p>© 2026 Noor Computer Shop. All rights reserved.</p>
+        <div class="foot-social"><a href="#">f</a><a href="#">📷</a><a href="#">𝕏</a><a href="#">▶</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
