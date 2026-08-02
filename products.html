@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Products — Noor Computer Shop</title>
+  <meta name="description" content="Browse our full catalog of computers, parts, and accessories." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="products">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><span class="logo-badge">N</span><span>Noor <span class="text-gradient">Computer</span></span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" title="Wishlist">♥</button>
+        <button class="icon-btn" title="Cart">🛒</button>
+        <button class="nav-toggle" id="navToggle" title="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"><div class="mm-inner">
+      <a href="index.html">Home</a><a href="products.html" class="active">Products</a>
+      <a href="services.html">Services</a><a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div></div>
+  </header>
+
+  <section class="page-header">
+    <span class="eyebrow">Shop</span>
+    <h1>All Products</h1>
+    <p>Browse our full catalog of computers, parts, and accessories.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="toolbar">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="search" type="text" placeholder="Search products or brands..." />
+        </div>
+        <select id="sort" class="sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+        <button id="filterToggle" class="filter-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          Filters
+        </button>
+      </div>
+
+      <div class="layout">
+        <aside class="desktop-filters"><div class="filters" id="filterPanel"></div></aside>
+
+        <div class="drawer-overlay" id="drawer">
+          <div class="drawer-backdrop" id="drawerClose"></div>
+          <div class="drawer-panel">
+            <div class="drawer-head"><h3>Filters</h3><button class="icon-btn" id="drawerCloseBtn">✕</button></div>
+            <div class="filters" id="filterPanelMobile"></div>
+          </div>
+        </div>
+
+        <div>
+          <p class="result-count" id="count">0 products found</p>
+          <div class="grid shop-grid" id="grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="foot-cols">
+        <div class="foot-brand">
+          <a href="index.html" class="logo"><span class="logo-badge">N</span><span>Noor <span class="text-gradient">Computer</span></span></a>
+          <p>Your trusted destination for computers, parts, and expert repair services. Quality tech, honest advice.</p>
+          <div class="foot-contact"><a href="tel:+11234567890">📞 (123) 456-7890</a><a href="mailto:info@noorcomputer.com">✉️ info@noorcomputer.com</a><span>📍 123 Tech Avenue, Silicon City</span></div>
+        </div>
+        <div class="foot-col"><h4>Shop</h4><ul><li><a href="products.html?category=laptops">Laptops</a></li><li><a href="products.html?category=gaming">Gaming PCs</a></li><li><a href="products.html?category=parts">Computer Parts</a></li><li><a href="products.html?category=monitors">Monitors</a></li></ul></div>
+        <div class="foot-col"><h4>Services</h4><ul><li><a href="services.html">Computer Repair</a></li><li><a href="services.html">Data Recovery</a></li><li><a href="services.html">Custom PC Builds</a></li><li><a href="services.html">IT Support</a></li></ul></div>
+        <div class="foot-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="services.html">Services</a></li><li><a href="index.html">Home</a></li></ul></div>
+      </div>
+      <div class="foot-bottom"><p>© 2026 Noor Computer Shop. All rights reserved.</p><div class="foot-social"><a href="#">f</a><a href="#">📷</a><a href="#">𝕏</a><a href="#">▶</a></div></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
